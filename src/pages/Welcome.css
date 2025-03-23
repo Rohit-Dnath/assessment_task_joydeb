@@ -1,0 +1,80 @@
+.welcome-container {
+  display: flex;
+  justify-content: flex-end; /* Align content to the bottom */
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.welcome-content {
+  text-align: left;
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 0; /* Remove extra margin */
+}
+
+.welcome-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.welcome-description {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+.welcome-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.welcome-primary-btn,
+.welcome-secondary-btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.welcome-primary-btn {
+  background-color: #7b2ff7;
+  color: #ffffff;
+  border: none;
+}
+
+.welcome-primary-btn:hover {
+  background-color: #6c25ff;
+}
+
+.welcome-secondary-btn {
+  background-color: #e8d8fc;
+  color: #000000;
+  border: none;
+}
+
+.welcome-secondary-btn:hover {
+  background-color: #d1b9f7;
+}
+
+@media (min-width: 768px) {
+  .welcome-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .welcome-primary-btn,
+  .welcome-secondary-btn {
+    width: auto;
+  }
+}
